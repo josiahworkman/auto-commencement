@@ -2,3 +2,5 @@
 *.log
 *.aux
 *.synctex.gz
+.gitignore
+.DS_Store
