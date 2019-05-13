@@ -2,11 +2,11 @@
 
 ![document view of pages in this latex template](pageview.png "Page View")
 
-The tool I needed to automate a most time-consuming task. This is my take on a graduation program. This was designed to replace a seriously antiquated program that someone developed in Microsoft word 2003 with all the clip art fixings you can imagine.
+This is my take on a commencement program. This was designed to replace a seriously antiquated Microsoft Word 2003 template with all the clip art fixings you can imagine.
 
-In sum, each year our department was copying and pasting students and faculty into a word file. Each year there was an assembly line of staff working together to fold and staple about one thousand graduation programs. It was easily the most frustrating thing I've ever seen in my entire life so I made this program.
+Each year our department staff copied and pasted students and faculty into a word file. There used to be an assembly line of staff to fold and staple about one thousand graduation programs. It was easily the most frustrating thing I've ever seen in my entire life so I made this LaTeX template.
 
-Each year we survey our undergraduate and graduate students to see if they plan to attend graduation, how many guests they plan to bring with them. We also ask their preferred name and if they have any future plans or thanks to share on graduation day. We've gotten a decent amount of feedback from attendees who especially like when their students mention their names in the program.
+Each year we send a survey to our undergraduate and graduate students to see if they plan to attend graduation and how many guests they plan to bring with them. We also ask their preferred name and if they have any future plans or thanks to share on graduation day. We use the data from this survey to create our yearly graduation commencement program.
 
 ## Requirements and Setup
 
@@ -21,7 +21,7 @@ Visit [The LaTeX Project](https://www.latex-project.org/get/) for platform speci
 ### Structure
 
 How is this thing organized? There are two folders and two latex documents. The /assets directory is where I've opted to store images and logo assets.
-The /data directors is for .csv lists and other data files. Obviously it doesn't matter how thigs are setup but LaTeX documents can fill up quickly with all the various .csv files and pictures.
+The /data directors is for .csv lists and other data files. Obviously it doesn't matter how things are setup, I just like a little organization.
 
 ### Notes on CSV Reader
 
@@ -43,10 +43,14 @@ If you plan to poll student data, get ready to learn a few MS Excel formulas, ba
 
 ### Building Portrait
 
-When you've designed a working copy of the program and you are prepared to print, build the final LaTeX.
+When you've designed a working copy of the program and you are prepared to print, compile the LaTeX document using any compiler of your choosing. The .pdf should then be converted into a booklet format using the "Booklet Format-letter.tex" program.
 
 ### Building into Booklet Format
 
-The final step of compiling this program as a booklet is to let LaTeX recompile the pages from the portrait copy as a booklet format. I'm invoking the [pdfpages](http://texdoc.net/texmf-dist/doc/latex/pdfpages/pdfpages.pdf) package to do this.
+The final step of compiling this program as a booklet is to let LaTeX recompile the pages from the portrait copy as a booklet format. This template uses the [pdfpages](http://texdoc.net/texmf-dist/doc/latex/pdfpages/pdfpages.pdf) package to do this.
 
 Building a PDF from the booklet format .tex file should produce a nice booklet style file to send to a print shop.  
+
+#### Last Thoughts
+
+I've used this as a learning project, any thoughts or comments on formatting are welcomed.
